@@ -39,6 +39,10 @@ input {
     border: none;
 }
 
+input:focus {
+    outline: none;
+}
+
 #add-task {
     flex: 1;
     transition: 0.3s;
