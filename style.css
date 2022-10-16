@@ -27,6 +27,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 0 3px rgb(42, 42, 42);
     display: flex;
+    margin-bottom: 16px;
 }
 
 input {
@@ -52,11 +53,50 @@ input:focus {
     border: none;
     border-radius: 8px;
     background-color: #fff;
+    cursor: pointer;
 }
 
-#add-task:hover {
+#add-task:hover, .task button:hover {
     background-color: #421f07;
     color: #fff;
+}
+
+/* Styling added tasks */
+.task {
+    width: 350px;
+    background-color: #6b340cc1;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 0 3px rgb(42, 42, 42);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.task button {
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    color: #582a0a;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask {
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+.task .deleteTask {
+    font-size: 1.2rem;
 }
 
 footer {
