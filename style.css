@@ -17,7 +17,7 @@ body {
     /* Img from https://www.pexels.com/@pavel-danilyuk/ */
     background: url(./img/tasks.jpg) no-repeat center center/ cover;
     color: #fff;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 #add-task-container {
