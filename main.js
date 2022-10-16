@@ -32,4 +32,18 @@ function addToList() {
     }  
     
     inputTask.value = "";
+
+    checkBtn.addEventListener("click", () => {
+        if (checkBtn.parentElement.style.textDecoration !== "line-through") {
+            checkBtn.parentElement.style.textDecoration = "line-through";
+        }
+        else {
+            checkBtn.parentElement.style.textDecoration = "none";
+        }
+    });
+
+    deleteBtn.addEventListener("click", (e) => {
+        e.target.parentElement.parentElement.remove();
+    });
+
 }
